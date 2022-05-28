@@ -1,0 +1,7 @@
+﻿  File.cpp
+C:\Users\Owner\Desktop\BTP200-main\WS02\src\lab\File.cpp(19,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Owner\Desktop\BTP200-main\WS02\src\lab\File.cpp(26,14): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Owner\Desktop\BTP200-main\WS02\src\lab\File.cpp(40,14): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Owner\Desktop\BTP200-main\WS02\src\lab\File.cpp(45,14): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Owner\Desktop\BTP200-main\WS02\src\lab\File.cpp(50,14): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Workshop2.vcxproj -> C:\Users\Owner\Downloads\Workshop2\Workshop2\x64\Debug\Workshop2.exe
