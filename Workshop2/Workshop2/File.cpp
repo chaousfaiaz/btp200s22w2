@@ -37,7 +37,7 @@ namespace sdds
    }
    bool read(char *studName)
    {
-      return fscanf(fptr, "%[^\n]\n", studName) == 1;
+      return fscanf(fptr, "%[^,],", studName) == 1;
    }
 
    bool read(int &studNum)
@@ -47,6 +47,6 @@ namespace sdds
 
    bool read(char &studGrade)
    {
-      return fscanf(fptr, "%c,", &studGrade) == 1;
+      return fscanf(fptr, "%c\n", &studGrade) == 1;
    }
 }

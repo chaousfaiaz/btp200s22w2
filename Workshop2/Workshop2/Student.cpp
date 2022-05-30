@@ -8,7 +8,7 @@
 //I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 //shared all my code for entire w2 LAB with yafet esayas yesayas@myseneca.ca
 #include <iostream>
-#include "cstring.h" //-------------------------------------------------------- implemented in workshop 1 part 2 (DIY)
+#include "Utils.h" //-------------------------------------------------------- implemented in workshop 1 part 2 (DIY)
 #include "Student.h"
 #include "File.h"
 
@@ -39,7 +39,7 @@ namespace sdds
    bool load(Student &students){
       bool ok = false;
       char name[128];
-      if (read(students.m_studentNumber) && read(students.m_grade) && read(name)){
+      if (read(name) && read(students.m_studentNumber) && read(students.m_grade) ){
          students.m_name = new char[strLen(name) + 1];
          strCpy(students.m_name, name);
          ok = true;
@@ -47,10 +47,10 @@ namespace sdds
       return ok;
    }
 
-   bool load(){
+   bool load(const char* FILENAME){
       bool ok = false;
       int i = 0;
-      if (openFile(DATAFILE)){
+      if (openFile(FILENAME)){
          noOfStudents = noOfRecords();
 
          students = new Student[noOfStudents];
@@ -69,13 +69,13 @@ namespace sdds
          closeFile();
       }
       else{
-         cout << "Could not open data file: " << DATAFILE << endl;
+         cout << "Could not open data file: " << FILENAME << endl;
       }
       return ok;
    }
 
    void display(const Student &students){
-      cout << students.m_name << ": " << students.m_studentNumber << ", " << students.m_grade << endl;
+      cout << students.m_name << ", " << students.m_studentNumber << ": " << students.m_grade << endl;
    }
 
    void display(){
@@ -83,7 +83,7 @@ namespace sdds
       sort();
 
       for (int i = 0; i < noOfStudents; i++){
-         cout << i + 1 << "- ";
+         cout << i + 1 << ": ";
          display(students[i]);
       }
    }

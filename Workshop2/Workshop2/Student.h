@@ -7,10 +7,10 @@
 //==============================================
 //I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
 //shared all my code for entire w2 LAB with yafet esayas yesayas@myseneca.ca
-#ifndef SDDS_EMPLOYEE_H_
-#define SDDS_EMPLOYEE_H_
+#ifndef SDDS_STUDENT_H_
+#define SDDS_STUDENT_H_
 
-#define DATAFILE "students.csv"
+
 
 namespace sdds
 {
@@ -29,7 +29,7 @@ namespace sdds
 
    // allocates the dyanmic array of students and loads all the file
    // recoreds into the array
-   bool load();
+   bool load(const char* FILENAME);
 
    // the display function that
    // displays a student record on the screen:

@@ -18,6 +18,20 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="gradeReport.cpp" />
+    <ClCompile Include="Student.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Student.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="students.csv" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -126,20 +140,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\cstring.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\File.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\gradeReport.cpp" />
-    <ClCompile Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\Student.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\cstring.h" />
-    <ClInclude Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\File.h" />
-    <ClInclude Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\Student.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\..\..\Desktop\BTP200-main\WS02\src\lab\students.csv" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -11,7 +11,7 @@
 #include "Student.h"
 using namespace sdds;
 int main() {
-   if (load()) {//---------originaly if(load())
+   if (load("students.csv")) {//---------originaly if(load())
       display();
    }
    deallocateMemory();
